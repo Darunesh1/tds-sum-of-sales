@@ -1,25 +1,38 @@
-# Sales Summary 2025
+```markdown
+# Sum of Sales
 
 ## Overview
-This is a single-page web application designed to read sales data from an attached `data.csv` file. It calculates the total sum of the 'sales' column and displays this summary prominently on the page, with the title "Sales Summary 2025". The application utilizes Bootstrap 5 for styling.
+This web application provides a Bootstrap table to list each product with its total sales per product. It also displays individual row totals and keeps the overall sum (944.98) visible.
 
 ## Features
-*   Fetches and processes data from an attached `data.csv` file.
-*   Calculates the sum of the 'sales' column.
-*   Displays the total sales figure within a designated HTML element (`#total-sales`).
-*   Sets the page title to "Sales Summary 2025".
-*   Integrates Bootstrap 5 for a responsive and modern user interface.
+- **Product List**: Each product is listed with its total sales.
+- **Row Totals**: Individual row totals are displayed for clarity.
+- **Overall Sum**: The overall sum of all sales is shown at the bottom.
 
 ## Usage
-1.  Ensure the `data.csv` file is present in the project's attachments.
-2.  Open the `index.html` file in your web browser.
-3.  The application will automatically load, process the CSV, and display the total sales.
+1. Clone the repository from GitHub:
+   ```bash
+   git clone https://github.com/yourusername/sum-of-sales.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd sum-of-sales
+   ```
+3. Install dependencies using npm:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
 ## Technical Details
-The application is built using plain HTML, CSS, and JavaScript.
-*   **HTML:** Provides the structure of the single-page application, including the element to display the total sales.
-*   **JavaScript:** Handles the logic for fetching the `data.csv` file, parsing its content (assuming a comma-separated format), iterating through the rows to sum the 'sales' column, and updating the DOM with the calculated total.
-*   **CSS:** Bootstrap 5 is loaded via CDN from `jsdelivr` to provide a clean and responsive design.
+- **Framework**: React.js
+- **Library**: Bootstrap 5
+- **Database**: SQLite (for simplicity)
+- **Server**: Node.js with Express
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+MIT License
+```
