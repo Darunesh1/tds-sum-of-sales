@@ -1,4 +1,3 @@
-```markdown
 # Sum of Sales
 
 ## Overview
